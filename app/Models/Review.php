@@ -9,12 +9,11 @@ class Review extends Model
 {
     use HasFactory;
 
-    // Связь с моделью Book (каждый Review принадлежит одной книге)
     public function book()
     {
         return $this->belongsTo(Book::class);
     }
-    protected $fillable = ['review_text', 'book_id', 'user_id']; // Добавьте 'content' сюда
+    protected $fillable = ['review_text', 'book_id', 'user_id']; 
 
     public function user()
     {

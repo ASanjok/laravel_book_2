@@ -10,7 +10,7 @@ class CreateAuthorsTable extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->id();
-            $table->string('name'); // Поле для имени автора
+            $table->string('name'); 
             $table->timestamps();
         });
     }

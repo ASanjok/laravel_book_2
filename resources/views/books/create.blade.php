@@ -1,4 +1,4 @@
-<!-- resources/views/books/create.blade.php -->
+
 @extends('dashboard')
 
 @section('content')

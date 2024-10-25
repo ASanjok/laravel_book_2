@@ -13,7 +13,6 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('text');
-            // Измените 'authors' на 'users', поскольку авторы книг — это пользователи
             $table->foreignId('author_id')->constrained('users')->onDelete('cascade'); 
             $table->timestamps();
         });
